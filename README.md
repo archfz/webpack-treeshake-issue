@@ -14,7 +14,7 @@ a react component that references a `Component1` from one of the two possible pa
 5. `npm run build`
    This time we are building the app referencing a module containing that same `Component1` but 
    also a `Component2` which is much heavier. Although we are not importing `Component2` the 
-   built time gets **~12x** slower.
+   built time gets **~12x** longer.
 
 In addition, note that: in webpack `useExports` optimization is turned off and in both cases we
 get the same results in `dist` (without `Component2`), based on this assuming that webpack
