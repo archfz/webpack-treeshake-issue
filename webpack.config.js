@@ -28,6 +28,7 @@ module.exports = {
       {
         test: /\.(tsx?)|(jsx?)$/,
         include: path.resolve(__dirname, '.'),
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
